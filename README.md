@@ -13,10 +13,20 @@ npm i @hakansundstrom/get-dir-tree
 ```javascript
 var getDirTree = require('get-dir-tree');
 
-getDirTree()
+/*
+ * @argument { boolean } Add true if you want robust data for each file. Otherwise each file just has a true value.
+ */
+getDirTree(true)
 .then(res => {
   // log the response or whatever
 })
+
+/*
+ * These folders/files are ignored
+ * node_modules, .git, .DS_Store, dist, build
+ * Add a second argument to getDirTree with regexps in an array to ignore more folders/files
+ * eg: [ /myPrivateFolder/, /dontAddme.js/, /iLikePrivate/, /iMakeNoSense.js/ ]
+ */
 ```
 
 ## How to use the CLI command

@@ -62,18 +62,21 @@ const regExcludes = [
   /build/,
 ];
 
-const startWalking = (log = false) => {
+const startWalking = (log = false, ingoreFilesFolders = []) => {
   return new Promise((res, rej) => {
-    walk('.', regExcludes, function(err, results) {
-      if (err) {
-        rej(err);
-        throw err;
-      }
-      res(results);
-      if (log) {
-        console.log(results)
-      }
-    });
+    walk(
+      '.',
+      [ ...regExcludes, ...ingoreFilesFolders ],
+      function(err, results) {
+        if (err) {
+          rej(err);
+          throw err;
+        }
+        res(results);
+        if (log) {
+          console.log(results)
+        }
+      });
   })
 }
 
