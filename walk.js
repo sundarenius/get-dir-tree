@@ -80,8 +80,4 @@ const startWalking = (log = false, ingoreFilesFolders = []) => {
   })
 }
 
-if (process.argv[2] === '--get') {
-  startWalking(true)
-}
-
 export default startWalking

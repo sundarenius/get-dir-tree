@@ -50,4 +50,9 @@ const getDirTree = async (includeFileData = false, ingoreFilesFolders) => {
   return dirTree
 }
 
+if (process.argv[2] === '--get') {
+  getDirTree(process.argv[3] === '--robust')
+  .then(res => console.log(JSON.stringify(res, null, 2)))
+}
+
 export default getDirTree
