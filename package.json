@@ -6,7 +6,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "log-dir-tree": "./index.js"
+    "log-dir-tree": "./bin/log-dir-tree.js"
   },
   "man": "./man/log-dir-tree.1",
   "scripts": {
