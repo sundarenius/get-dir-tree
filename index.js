@@ -22,7 +22,7 @@ const createSubPaths = (dir) => {
   })
 }
 
-const getDirTree = async (includeFileData, ingoreFilesFolders) => {
+const getDirTree = async (includeFileData = false, ingoreFilesFolders) => {
   const dirs = await getFilesAndSubDirs(ingoreFilesFolders)
   dirs.forEach(dir => {
     if (dir.includes('/')) {
@@ -52,7 +52,7 @@ const getDirTree = async (includeFileData, ingoreFilesFolders) => {
 
 const terminalArg = process.argv[2]
 if (terminalArg === '--get') {
-  getDirTree(true).then(res => {
+  getDirTree(process.argv[3] === '--robust').then(res => {
     console.log(JSON.stringify(res, null, 2))
   })
 }
