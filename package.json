@@ -1,10 +1,10 @@
 {
   "name": "@hakansundstrom/get-dir-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get directory files and subfolders tree in JSON of any path",
+  "author": "Håkan Sundström <sundarenius@gmail.com>",
   "main": "index.js",
   "type": "module",
-  "author": "Håkan Sundström <sundarenius@gmail.com>",
   "bin": {
     "log-dir-tree": "./index.js --get"
   },
@@ -12,12 +12,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "directory-tree",
-    "json-directory-tree",
-    "paths-and-files"
+    "directory tree",
+    "json directory tree",
+    "paths and files",
+    "get files and subfolders"
   ],
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sundarenius/get-dir-tree"
+  },
+  "homepage": "https://github.com/sundarenius/get-dir-tree"
 }
