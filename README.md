@@ -32,7 +32,7 @@ getDirTree(true)
 ## How to use the CLI command
 ```
  1. sudo npm i -g @hakansundstrom/get-dir-tree (omit sudo and -g to only locally install)
- 2. run 'log-dir-tree' from your terminal.
+ 2. run 'log-dir-tree --get' from your terminal.
 ```
 
 ## Maintainers
