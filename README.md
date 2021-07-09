@@ -1,6 +1,6 @@
 # GET-DIR-TREE
 
-Get directory files and subfolders tree in JSON of from any path from this was triggered.
+Get files and subfolders tree in JSON format of any directory path. This will give you the directory tree from where this was triggered.
 
 Import as default and the response is a Promise with a complete directory tree as JSON data.
 
@@ -32,7 +32,7 @@ getDirTree(true)
 ## How to use the CLI command
 ```
  1. sudo npm i -g @hakansundstrom/get-dir-tree (omit sudo and -g to only locally install)
- 2. run 'log-dir-tree --get --robust' from your terminal.
+ 2. run 'get-dir-tree --get --robust' from your terminal.
  3. Omit --robust if you only want the dir tree without data on each file.
 ```
 
