@@ -1,6 +1,6 @@
 {
   "name": "@hakansundstrom/get-dir-tree",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Get directory files and subfolders tree in JSON of any path",
   "author": "Håkan Sundström <sundarenius@gmail.com>",
   "main": "index.js",
@@ -8,7 +8,7 @@
   "bin": {
     "get-dir-tree": "./bin/get-dir-tree.js"
   },
-  "man": "./man/log-dir-tree.1",
+  "man": "./man/get-dir-tree.1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
